@@ -1,0 +1,47 @@
+<!--
+// ------------------------------------------------------------------------------
+// Assignment 2
+// Written by: (Raffi Alan Bezirjian) -> 123456
+// For SOEN 287 Section A – Summer 2019
+// -----------------------------------------------------------------------------
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Assign-2 Q4</title>
+    <script>
+
+        function HideMe() {
+
+            var userInput = prompt("Please enter a sentence:");
+            var input = userInput;
+            
+            userInput = userInput.replace(/summer/ig, 'XXXXXX')
+            userInput = userInput.replace(/soen287/ig, 'XXXXXXX')
+            userInput = userInput.replace(/19/ig, 'XX')
+            
+            var summer = input.match(/summer/i);
+            var soen287 = input.match(/soen287/i);
+            var word19 = input.match(/19/i);
+
+            if (summer || soen287 || word19) {
+                document.getElementById("result").innerHTML+= userInput;
+            } else {
+                document.getElementById("result").innerHTML+= input;
+                document.getElementById("result").style.backgroundColor = "lightblue";
+            }
+        }
+    </script>
+</head>
+
+<body onload="HideMe()">
+        <div style="overflow: hidden;">
+                <p style="float: left;">>> </p>
+                <p style="float: left; margin: 15px" id="result"> </p>
+        </div>
+</body>
+
+</html>

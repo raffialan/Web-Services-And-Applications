@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        html {
+            display: table;
+            margin: auto;
+        }
+
+        body {
+            display: table-cell;
+            vertical-align: middle;
+            background-color: yellow;
+        }
+
+        h1 {
+            color: maroon;
+            margin-left: 40px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        .field_set_customer_info {
+            border-color: red;
+            border-style: solid;
+            background-color: rgb(233, 177, 177);
+        }
+
+        .field_set_car_info {
+            border-color: green;
+            border-style: solid;
+            background-color: rgb(220, 224, 233);
+        }
+
+        .legend_set_customer_info {
+            color: red;
+
+        }
+
+        .legend_set_car_info {
+            color: green;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <a href="images/car.png"><img src="images/car.png" width="250" height="100" /></a>
+                </td>
+                <td>
+                    <h1>Car Dealership</h1>
+                </td>
+
+            </tr>
+        </table>
+
+        <fieldset class=field_set_customer_info>
+
+
+            <legend class=legend_set_customer_info>Customer Information</legend>
+            <p>
+                <label>Customer Name</label><br>
+                <input type="text" name="first_name" placeholder="First Name">
+                <input type="text" name="first_name" placeholder="Last Name">
+            </p>
+            <p>
+                <label>Customer Contact</label>
+                <input type="text" name="Customer_contact" placeholder="xxx-xxx-xxxx">
+            </p>
+            <p>
+                <label>Email Address</label>
+                <input type="email" name="email" placeholder="email address">
+            </p>
+
+
+        </fieldset>
+
+        <fieldset class=field_set_car_info>
+            <legend class=legend_set_car_info>Car Information</legend>
+
+
+            <p>
+                <label>Car Type:</label><br>
+
+                <input type="radio" name="title" value="coupe" checked="true">
+                Coupe
+                <br>
+
+                <input type="radio" name="title" value="sedan">
+                Sedan
+                <br>
+
+                <input type="radio" name="title" value="SUV">
+                SUV
+
+            </p>
+
+            <p>
+                <label>Features:</label><br>
+
+                <input type="checkbox" name="reat" value="rear" checked="true">
+                Rear View Camera
+
+
+                <input type="checkbox" name="gps" value="gps">
+                GPS
+
+                <input type="checkbox" name="leather" value="leather">
+                Leather Seats
+
+            </p>
+
+            <p>
+                <label>Price Range:</label><br>
+                Minimum Price: <input type="text" name="min">
+                Maximum Price: <input type="text" name="max">
+            </p>
+
+            <p>
+                <label>Car Color:</label><br>
+                <input type="color" name="favcolor" value="#000000">
+            </p>
+
+            <p>
+                <label>Approximate Purchase Date:</label><br>
+                <input type="date">
+            </p>
+
+        </fieldset>
+
+        <p>
+
+
+            Request a list of cars with quotes.
+
+        </p>
+        <p>
+            <button>Search</button>
+            <button type="reset">Start over</button>
+        </p>
+
+    </form>
+
+</body>
+
+</html>

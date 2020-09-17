@@ -1,0 +1,45 @@
+<!--
+// ------------------------------------------------------------------------------
+// Assignment 2
+// Written by: (Raffi Alan Bezirjian) -> 123456
+// For SOEN 287 Section A – Summer 2019
+// -----------------------------------------------------------------------------
+-->
+
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "utf-8">
+        <title>Assign-2 Q3</title>
+        <script type = "text/javascript" src = "Q3.js"></script>
+        <link rel = "stylesheet" type = "text/css" href = "Q3.css">
+        <script src = "https://cdn.plot.ly/plotly-latest.min.js"></script>
+    </head>
+    <body>
+        <form id="form">
+            <table>
+                <tr id = "row1">
+                    <td>
+                        <label>Input String:</label>
+                    </td>
+                    <td>
+                       <input type = "text" id ="userInput1" size = "25" value = "">
+                    </td>
+                </tr>
+                <tr id = "row2">
+                    <td>
+                        <label>Input Word:</label>
+                    </td>
+                    <td>
+                        <input type = "text" id ="userInput2" size = "25" value = "">
+                    </td>
+                </tr>
+                <tr id = "row3">
+                    <td colspan = "2">
+                        <input type = "button" id ="plot histogram" value = "Plot Histogram" onclick = "plotHistogram()">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <div id ="histogram"></div>
+    </body>

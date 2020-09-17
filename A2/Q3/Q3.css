@@ -1,0 +1,39 @@
+/*
+// ------------------------------------------------------------------------------
+// Assignment 2
+// Written by: (Raffi Alan Bezirjian) -> 123456
+// For SOEN 287 Section A – Summer 2019
+// -----------------------------------------------------------------------------
+*/
+
+
+
+
+#row1, #row3
+{
+    background-color: rgb(81, 198, 228);
+}
+
+
+#r2
+{
+    background-color: rgb(229, 229, 229);
+}
+
+table, td
+{
+    font-size: 20px;
+    border: 1px solid red;
+    padding: 5px;
+    padding-right: 15px;
+}
+
+#form{
+    align-self: center;
+}
+
+input
+{
+    margin-right: 25px;
+}
+

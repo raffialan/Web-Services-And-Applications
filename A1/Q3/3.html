@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <form>
+            <table>
+                    <tr>
+                        <td>
+                            <a href="images/car.png"><img src="images/car.png" width="250"  height="100"/></a>
+                        </td>
+                        <td>
+                            <h1>Car Dealership</h1>
+                        </td>
+        
+                    </tr>
+                </table>
+        <fieldset>
+            <legend>Customer Information</legend>
+            <p>
+                <label>Customer Name</label><br>
+                <input type="text" name="first_name" placeholder="First Name">
+                <input type="text" name="first_name" placeholder="Last Name">
+            </p>
+            <p>
+                <label>Customer Contact</label>
+                <input type="text" name="Customer_contact" placeholder="xxx-xxx-xxxx">
+            </p>
+            <p>
+                <label>Email Address</label>
+                <input type="email" name="email" placeholder="email address">
+            </p>
+
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Car Information</legend>
+
+
+            <p>
+                <label>Car Type:</label><br>
+                <label>
+                    <input type="radio" name="title" value="coupe" checked="true">
+                    Coupe
+                </label><br>
+                <label>
+                    <input type="radio" name="title" value="sedan">
+                    Sedan
+                </label><br>
+                <label>
+                    <input type="radio" name="title" value="SUV">
+                    SUV
+                </label>
+            </p>
+
+            <p>
+                <label>Features:</label><br>
+                <label>
+                    <input type="checkbox" name="reat" value="rear" checked="true">
+                    Rear View Camera
+                </label>
+                <label>
+                    <input type="checkbox" name="gps" value="gps">
+                    GPS
+                </label>
+                <label>
+                    <input type="checkbox" name="leather" value="leather">
+                    Leather Seats
+                </label>
+            </p>
+
+            <p>
+                <label>Price Range:</label><br>
+                Minimum Price: <input type="text" name="min">
+                Maximum Price: <input type="text" name="max">
+            </p>
+
+            <p>
+                <label>Car Color:</label><br>
+                <input type="color" name="favcolor" value="#000000">
+            </p>
+
+            <p>
+                <label>Approximate Purchase Date:</label><br>
+                <input type="date">
+            </p>
+
+        </fieldset>
+
+        <p>
+            <label>
+
+                Request a list of cars with quotes.
+            </label>
+        </p>
+        <p>
+            <button>Search</button>
+            <button type="reset">Start over</button>
+        </p>
+
+    </form>
+
+</body>
+
+</html>
